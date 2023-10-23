@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/clear.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather-Forcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" class="search-input" placeholder="&nbsp;&nbsp;enter city name" required>
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    </div>
+    <div id="currentDateTime"></div>
+
+    <div class="weather-forcast">
+        <img src="img/rain.png" alt="rain" class="weather-icon">
+        <h1 class="temp">Temp in °c</h1>
+
+        <div class="slider-container">
+            <label class="slider">
+                <input type="checkbox" id="switchButton">
+                <span class="slider-btn"></span>
+                <span class="slider-text"> &nbsp;°C</span>
+            </label>
+        </div>
+        <div class="city-name">
+            <h2 class="city">Enter Your City Name</h2>
+            <h3 class="country"></h3>
+        </div>
+        
+    </div>
+
+    <div class="details">
+        <div class="humidity">
+            <img src="img/humidity.png" alt="humidity">&nbsp;&nbsp;
+            <div class="humidity-container">
+                <h4 class="humidity-gen"> in %</h4>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="wind">
+            <img src="img/wind.png" alt="wind" >&nbsp;&nbsp;
+            <div class="wind-container">
+                <h4 class="wind-gen"> in km/h</h4>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
